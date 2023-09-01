@@ -1,0 +1,488 @@
+@charset "UTF-8";
+* {
+  font-family: "roboto", sans-serif; }
+
+header {
+  position: relative;
+  height: 50px; }
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 2; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none; }
+
+.menu_link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300; }
+
+.menu .menu_item {
+  border-right: 2px dotted black;
+  padding-right: 25px; }
+.menu .menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300; }
+
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .subheader .subheader_logo {
+    display: block;
+    max-width: 100%;
+    margin-top: 16px; }
+  .subheader .subheader_official {
+    margin-top: 6px;
+    opacity: 0.6;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400; }
+  .subheader .subheader_call {
+    margin-top: 24px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px; }
+  .subheader .subheader_phone {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 3px;
+    font-weight: 400;
+    font-size: 20px; }
+  .subheader .subheader_bootonp {
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 25px;
+    width: 172px;
+    height: 46px;
+    color: #ffffff;
+    font-style: normal;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    text-transform: uppercase;
+    background: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4CE2FF));
+    background: linear-gradient(0deg, #1eacc7 0%, #4CE2FF 100%);
+    -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+    outline: none; }
+    .subheader .subheader_bootonp:hover {
+      background-image: none;
+      background-color: #1eacc7; }
+
+.promo {
+  min-height: 800px;
+  background: url("../img/bg/uber_bg.png") center center/cover no-repeat;
+  padding: 150px 0 135px 0; }
+  .promo .promo_header {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 0;
+    text-align: center; }
+  .promo .promo_subheader {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 60px;
+    margin: 0;
+    margin-top: 22px;
+    text-align: center; }
+  .promo .promo_descr {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 23px; }
+  .promo .promo_btn {
+    display: block;
+    margin: 50px auto 0 auto;
+    border: none;
+    width: 259px;
+    height: 63px;
+    background: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4CE2FF));
+    background: linear-gradient(0deg, #1eacc7 0%, #4CE2FF 100%);
+    -webkit-box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+            box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 68px; }
+    .promo .promo_btn:hover {
+      background-image: none;
+      background-color: #1eacc7; }
+
+.reasons {
+  text-align: center;
+  padding: 71px 0 65px 0; }
+  .reasons .logo_contend {
+    margin-top: 50px;
+    background-color: black;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 11px; }
+  .reasons .contend_start {
+    margin-top: 33px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px; }
+
+.label {
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center; }
+
+.title {
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center; }
+
+.subtitle {
+  margin-top: 19px;
+  color: #222222;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center; }
+
+.reasons .reasons_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px; }
+  .reasons .reasons_block .reasons_round {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 26px;
+    width: 113px;
+    height: 113px;
+    background-color: #1eacc7;
+    border-radius: 100%; }
+  .reasons .reasons_block .reasons_descr {
+    width: 343px; }
+    .reasons .reasons_block .reasons_descr .reasons_subtitle {
+      line-height: 21px;
+      color: #1eacc7;
+      font-size: 17px;
+      font-weight: 400; }
+    .reasons .reasons_block .reasons_descr .reasons_text {
+      color: #202020;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 21px; }
+
+.mobile {
+  margin-bottom: 19px;
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/bg/mobile_bg.png") center center/cover no-repeat; }
+  .mobile .row {
+    margin-top: 32px; }
+  .mobile_item {
+    position: relative;
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    padding-top: 92px; }
+    .mobile_item_1 {
+      background: url("../img/bg_header/Карточка 1.png") center center/cover no-repeat; }
+    .mobile_item_2 {
+      background: url("../img/bg_header/Карточка 2.png") center center/cover no-repeat; }
+    .mobile_item_3 {
+      background: url("../img/bg_header/Карточка 3.png") center center/cover no-repeat; }
+    .mobile_item_4 {
+      background: url("../img/bg_header/Карточка 4.png") center center/cover no-repeat; }
+    .mobile_item_5 {
+      background: url("../img/bg_header/Карточка 5.png") center center/cover no-repeat; }
+    .mobile_item_6 {
+      background: url("../img/bg_header/Карточка 6.png") center center/cover no-repeat; }
+    .mobile_item_subtitle {
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 31px;
+      text-transform: uppercase;
+      text-align: center; }
+    .mobile_item_plus {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      align-item: center;
+      position: absolute;
+      bottom: 35px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+      margin: 0 auto;
+      width: 26px;
+      height: 26px;
+      border-radius: 100%;
+      background: #000000;
+      padding: 6px;
+      cursor: pointer; }
+      .mobile_item_plus:before {
+        content: "";
+        display: block;
+        margin-top: 5px;
+        width: 14px;
+        height: 2px;
+        background-color: #1eacc7; }
+      .mobile_item_plus:after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%);
+        display: block;
+        height: 14px;
+        width: 2px;
+        background-color: #1eacc7;
+        -webkit-transition: 0.3s all;
+        transition: 0.3s all; }
+      .mobile_item_plus:hover:before, .mobile_item_plus:hover:after {
+        background-color: #ffffff; }
+
+.thing {
+  background: url("../img/bg/Темная подложка.png") center center/cover no-repeat;
+  min-height: 800px;
+  padding: 52px 0 79px 0; }
+  .thing .label_bt {
+    margin: 0 auto;
+    height: 24px;
+    width: 112px;
+    background-color: #ffffff;
+    color: black;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 2px 0 4px 0;
+    text-transform: uppercase;
+    text-align: center; }
+
+.title_bt {
+  padding-top: 27px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase; }
+
+.subtitle_bt {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center; }
+
+.title_img {
+  display: block;
+  margin: 54px auto; }
+
+.title_bot {
+  padding: 25px 0 50px 0;
+  text-align: center;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px; }
+
+.require {
+  padding: 68px 0 84px 0; }
+  .require_block {
+    margin: 33px 0; }
+    .require_block_nmb {
+      margin-bottom: 0px; }
+  .require_title {
+    color: #1ca8c3;
+    font-size: 22px;
+    font-weight: 400; }
+  .require_list {
+    list-style-type: none;
+    padding-left: 50px;
+    margin-top: 22px; }
+    .require_list li {
+      position: relative;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 24px;
+      margin-bottom: 10px; }
+      .require_list li:before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: -32px;
+        top: 3px;
+        width: 21px;
+        height: 20px;
+        background: url("../icons/check_blue 4.png") center center/cover no-repeat; }
+  .require_descr {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #1ca8c3; }
+  .require .warning .require_title {
+    color: #FF5656; }
+
+.maps {
+  padding: 48px 0 21px 0; }
+  .maps .label_ft {
+    display: block;
+    margin: 0 auto;
+    background-color: #ffffff;
+    width: 100px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center; }
+  .maps .title_ft {
+    color: #ffffff;
+    margin-top: 38px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center; }
+  .maps .subtitle_ft {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    text-transform: uppercase;
+    text-align: center; }
+  .maps .maps_link {
+    color: #4CE2FF;
+    display: block;
+    padding: 450px 0 0 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 68px; }
+  .maps .substrate {
+    background: url("../img/bg/Темная подложка.png") center center/cover no-repeat; }
+  .maps .maps_img_bg {
+    background: url("../img/bg/world_bg.png") center center/cover no-repeat;
+    min-height: 700px;
+    padding: 52px 240px 79px 242px; }
+
+.footer {
+  padding: 11px 8px 0px 8px; }
+
+.line {
+  display: block;
+  margin: 0 auto;
+  border-top: 4px solid #1eacc7;
+  width: 450px;
+  border-radius: 15px; }
+
+.link_footer {
+  display: block;
+  text-align: center;
+  margin-top: 25px; }
+
+.link_home {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 68px;
+  color: #222222;
+  margin-left: 15px; }
+  .link_home:hover {
+    background-image: none;
+    background-color: #1eacc7; }
+
+.icons_ft {
+  position: absolute;
+  bottom: 150px;
+  background-color: black;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px; }
+
+.link_footer_conti {
+  text-align: center;
+  display: block; }
+
+.link_home_header {
+  font-size: 18px;
+  line-height: 68px;
+  text-align: center;
+  text-decoration: none;
+  color: #999999;
+  margin-right: 5px; }
+
+.link_home_ru {
+  color: #1eacc7;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 68px; }
+
+@media (max-height: 1200px) {
+  .menu_item {
+    padding-right: 20px; }
+  .menu_link {
+    font-size: 13px; } }
+
+/*# sourceMappingURL=style.css.map */
